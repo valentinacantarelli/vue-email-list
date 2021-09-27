@@ -6,26 +6,24 @@
 const app= new Vue({
     el:"#root",
     data:{
-        mailingList:null,
-        randomMail:null,
-        check:"",
+        mailingList:[],
+        
     },
     methods:{
         
 
     },
     mounted(){
-        axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-        .then((response)=>{
-            for(var i=0;i <10;i++){
-                this.randomMail=response.data.response;
-                if(this.mailingList.includes(this.randomMail)){
-                }else{
-                    this.mailingList.push(this.randomMail);
-                }
-            }
+        for(var i=0;i <10;i++){
+            axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+            .then((response)=>{
+                this.mailingList.push(response.data.response);
+            });  
         }
-        )},
+        
+        },
 
-    
+         
 });
+
+
