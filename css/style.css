@@ -9,13 +9,25 @@ body{
 }
 #root{
     height: 90vh;
-    width: 400px;
+    width: 800px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 80px;
+    text-align: center;
+}
+h3{
+    font-size: 35px;
 }
 .fas{
     padding: 0 20px;
+    font-size: 12px;
+    vertical-align: middle;
 }
 li{
-    list-style: none;
+    list-style: none;  
+    padding: 5px;  
+    
+}
+ul{
+    margin-top: 40px;
+    
 }

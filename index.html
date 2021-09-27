@@ -18,7 +18,7 @@
         <div id="root">
             <h3><i class="fas fa-circle"></i>Ecco una lista di mail casuali<i class="fas fa-circle"></i></h3>
             <ul>
-                <li v-for="(mail,index) in mailingList" :key="index">{{mail}}</li>
+                <li v-for="(mail,index) in mailingList" :key="index" v-if="mail !=null">{{mail}}</li>
             </ul>
 
         </div>
