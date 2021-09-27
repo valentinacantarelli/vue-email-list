@@ -6,21 +6,24 @@
 const app= new Vue({
     el:"#root",
     data:{
-        mailingList:[],
+        mailingList:null,
         randomMail:null,
+        check:"",
     },
     methods:{
+        
 
     },
     mounted(){
         axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
         .then((response)=>{
             for(var i=0;i <10;i++){
-                randomMail=response.data.response;
-                if(this.randomMail)
-                console.log(randomMail);
+                this.randomMail=response.data.response;
+                if(this.mailingList.includes(this.randomMail)){
+                }else{
+                    this.mailingList.push(this.randomMail);
+                }
             }
-            
         }
         )},
 
