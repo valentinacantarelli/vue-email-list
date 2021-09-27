@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(213, 230, 224);
+}
+#root{
+    height: 90vh;
+    width: 400px;
+    margin: auto;
+    margin-top: 40px;
+}
+.fas{
+    padding: 0 20px;
+}
+li{
+    list-style: none;
+}
