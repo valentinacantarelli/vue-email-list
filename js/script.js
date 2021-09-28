@@ -7,11 +7,8 @@ const app= new Vue({
     el:"#root",
     data:{
         mailingList:[],
-        
     },
     methods:{
-        
-
     },
     mounted(){
         for(var i=0;i <10;i++){
@@ -20,10 +17,7 @@ const app= new Vue({
                 this.mailingList.push(response.data.response);
             });  
         }
-        
         },
-
-         
 });
 
 
